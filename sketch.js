@@ -48,7 +48,7 @@ function clockFace(){
   fill(100,100,255,50);
   stroke(100,100,255);
   circle(250,250,450);
-  for(int i = 0; i < 12; i++){
+  for(var i = 0; i < 12; i++){
     float angle = (TWO_PI / 12) * i;
     line(225 * cos(angle) + 250, 225 * sin(angle) + 250, 200 * cos(angle) + 250, 200 * sin(angle) + 250);
    }
