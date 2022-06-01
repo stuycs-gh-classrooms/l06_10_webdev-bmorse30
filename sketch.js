@@ -2,7 +2,8 @@
 var minuteInSeconds = (minute() * 60) + second();
 var hourInSeconds = (hour() % 12) * 3600 + minuteInSeconds;
 var secondInSeconds = second();
-
+var PI = Math.pi;
+var TWO_PI = 2 * PI;
 function setup(){
   createCanvas(500,500);
   background(255);
