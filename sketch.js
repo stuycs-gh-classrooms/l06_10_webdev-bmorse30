@@ -7,13 +7,13 @@ function setup(){
   createCanvas(500,500);
   background(255);
   frameRate(60);
-  timeToAngle(10, 's');
 }
 
 function draw(){
   background(255);
   updateTime();
   clockFace();
+  println(hourInSeconds);
 }
 
 
