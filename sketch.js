@@ -16,7 +16,6 @@ function draw(){
   background(255);
   updateTime();
   clockFace();
-  println(hourInSeconds);
 }
 
 
