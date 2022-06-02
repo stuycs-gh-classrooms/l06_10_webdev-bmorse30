@@ -2,8 +2,10 @@
 var minuteInSeconds = (minute() * 60) + second();
 var hourInSeconds = (hour() % 12) * 3600 + minuteInSeconds;
 var secondInSeconds = second();
+
 var PI = Math.pi;
 var TWO_PI = 2 * PI;
+
 function setup(){
   createCanvas(500,500);
   background(255);
@@ -61,4 +63,17 @@ function updateTime(){
   minuteInSeconds = (minute() * 60) + second();
   secondInSeconds = second();
   hourInSeconds = (hour() % 12) * 3600 + minuteInSeconds;
+}
+
+function second(){
+  var d = new Date();
+return(d.getMinutes());
+}
+function minute(){
+  var d = new Date();
+return(d.getMinutes());
+}
+function hour(){
+  var d = new Date();
+return(d.getHours());
 }
